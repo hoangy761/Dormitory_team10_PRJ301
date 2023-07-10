@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/fontawesome-free-6.3.0-web/css/all.css">
+
+    <link rel="stylesheet" href="CSS/cssBase.css" />
+    <link rel="stylesheet" href="CSS/homepageTest.css" />
+
+    <title>homePage</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav_left">
+            <div class="nav_left_iconSetting">
+                <div>
+                    <i class="fa-solid fa-bars iconCss_hover"></i>
+                </div>
+            </div>
+            <div class="nav_left_home">
+                <a href="#" class="nav_left_home">
+                    <div class="logo_FPT">
+                        <img src="https://lmsdn.fpt.edu.vn/pluginfile.php/1/core_admin/logo/0x200/1657934026/2021-FPTU-Eng.png"
+                            alt="" srcset="">
+                    </div>
+                    <p style="color: #1177d1; font-size: 300;">FPT University Da Nang</p>
+                </a>
+            </div>
+        </div>
+        <div class="nav_right">
+            <div class="nav_right_iconMess">
+                <i class="fa-solid fa-comment-dots iconCss_hover"></i>
+            </div>
+            <div class="nav_right_iconNoti">
+                <i class="fa-regular fa-bell iconCss_hover"></i>
+            </div>
+            <div class="nav_right_info">
+                <span style="cursor:unset;">
+
+                    <a href="login.jsp"> Login</a>
+
+                </span>
+                <div class="nav_right_info_avt">
+                    <img src="<% if (loginUser != null) {
+
+                        %><%= loginUser.getImgUser()%>
+                        <%
+                        } else {%> 
+                        https://www.google.com/url?sa=i&url=https%3A%2F%2Fkhoinguonsangtao.vn%2Favatar-hai%2F&psig=AOvVaw0-pzp4_ctg2Dwu3_gVi1rw&ust=1677407432522000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOC1xuO7sP0CFQAAAAAdAAAAABAE
+                        <%}%>" alt="">
+                </div>
+
+                <div class="nav_right_info-icon">
+                    <i class="fa-solid fa-caret-down iconCss_hover"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <ul class="left_menu">
+                <a href="home.jsp" target="target">
+                    <li class="home">
+                        <i class="fa-solid fa-house-user iconCss"></i>
+                        <span>Home</span>
+                    </li>
+                </a>
+
+                <a href="userList.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>List User</span>
+                    </li>
+                </a>
+
+                <a href="roomFloor.jsp" target="target">
+                    <li class="myRoom ">
+                        <i class="fa-solid fa-people-roof iconCss"></i>
+                        <span>Room</span>
+                    </li>
+                </a>
+                <a href="userList.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>My Room</span>
+                    </li>
+                </a>
+
+
+                <a href="history.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>History</span>
+                    </li>
+                </a>
+                <a href="history.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>Pay</span>
+                    </li>
+                </a>
+                <a href="history.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>.......</span>
+                    </li>
+                </a>
+                <a href="history.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>......</span>
+                    </li>
+                </a>
+                <a href="history.jsp" target="target">
+                    <li class="pay">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>......</span>
+                    </li>
+                </a>
+
+
+
+                <a href="MainController?action=Logout" target="target">
+                    <li class="logout">
+                        <i class="fa-sharp fa-solid fa-credit-card iconCss"></i>
+                        <span>Logout</span>
+                    </li>
+                </a>
+
+
+
+                <li class="moreMenu">
+                    <i class="fa-solid fa-window-restore iconCss"></i>
+                    <span>More...</span>
+                </li>
+            </ul>
+        </div>
+        <div class="listRoom">
+            <!-- floor----------------------- -->
+            <div class="listFloor">
+                <ul class="listFloor_menu">
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>A - Floor 1</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>A - Floor 2</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>A - Floor 3</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>A - Floor 4</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>A - Floor 5</span>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="listFloor_menu">
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>B-Floor 1</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>B - Floor 2</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>B - Floor 3</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>B - Floor 4</span>
+                        </li>
+                    </a>
+                    <a href="home.jsp" target="target">
+                        <li class="home">
+                            <span>B - Floor 5</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!--end Floor-->
+            <div class="maps">
+                <h1> Floor 1 </h1>
+                <table>
+                    <tr>
+                        <td class="room room-full">1</td>
+                        <td class="room">2</td>
+                        <td class="room">3</td>
+                        <td class="room">4</td>
+                        <td class="room">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="room">11</td>
+                        <td class="room">12</td>
+                        <td class="room">13</td>
+                        <td class="room">14</td>
+                        <td class="room">15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="room">6</td>
+                        <td class="room">7</td>
+                        <td class="room">8</td>
+                        <td class="room">9</td>
+                        <td class="room">10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="room">16</td>
+                        <td class="room">17</td>
+                        <td class="room">18</td>
+                        <td class="room">19</td>
+                        <td class="room">20</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="room">1</td>
+                        <td class="room">2</td>
+                        <td class="room">3</td>
+                        <td class="room">4</td>
+                        <td class="room">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="room">11</td>
+                        <td class="room">12</td>
+                        <td class="room">13</td>
+                        <td class="room">14</td>
+                        <td class="room">15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="room">6</td>
+                        <td class="room">7</td>
+                        <td class="room">8</td>
+                        <td class="room">9</td>
+                        <td class="room">10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="room">16</td>
+                        <td class="room">17</td>
+                        <td class="room">18</td>
+                        <td class="room">19</td>
+                        <td class="room">20</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="confirmRoom">
+                <div class="confirmRoom-border">
+                    <div class="confirmRoom-border-close">
+                        <a href="listRoom.jsp">X</a>
+                    </div>
+                    <div class="confirmRoom-border-box">
+                        <form action="" method="post">
+                            <p>Room: A101</p>
+                            <span>Bed: </span>
+                            <input type="radio" name="bed" value="1">
+                            <input type="radio" name="bed" value="2"> <br>
+                            <input style="margin-left: 2.5rem;" type="radio" name="bed" value="3">
+                            <input type="radio" name="bed" value="4">
+                            <p>Name: Bùi Hoàng Ý - DE160208</p>
+                            <span>Start Day: </span>
+                            <input type="date" name="" id=""><br>
+                            <p>Price: 3.200.000 vnđ</p>
+                            <p>*Điều kiện:</p>
+                            <div class="contract">
+                                <p>There is a high spread for USDC on GMX, <br>
+                                    reflecting its current market-wide trading price. <br>
+                                    These spreads may impact your leverage short<br> positions
+                                    using USDC as collateral, swaps into <br>and out of USDC,
+                                    and any other transactions <br>involving USDC,
+                                    including minting/burning GLP.</p>
+                            </div>
+                            <span>Agree</span>
+                            <input class="confirmRoom-checkbox" type="checkbox" name="contract" id=""><br>
+                            <input class="confirmRoom-regist" type="submit" value="Regist Room">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="right" id="right-id">
+
+            <h1>Select Floor</h1>
+
+
+        </div> -->
+        <!-- floor----------------------- -->
+    </div>
+    <!--end container-->
+    <script src="js/listFloor_room.js"></script>
+</body>
+
+</html>

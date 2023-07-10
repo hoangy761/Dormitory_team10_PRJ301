@@ -1,0 +1,226 @@
+
+/* test */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.header ,.nav_left, .nav_left_home,.nav_right, .nav_right_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    height: 3rem;
+    box-shadow: 0 0 8px;
+    margin-bottom: 22px;
+  
+}
+.nav_left{
+    margin-left: 2rem;
+}
+
+a {
+        text-decoration: none;
+        color: var(--background-color_icon_menu);
+    }
+
+.iconCss{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: var(--background-color_icon_menu);
+}
+.iconCss_hover{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #f7fafe;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.iconCss_hover:hover{
+    background-color: #d4d7dc;
+}
+
+.nav_left_home{
+    cursor: pointer;
+    text-decoration-line: none;
+    text-decoration-color: black;
+}
+
+.logo_FPT img{
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.nav_right{
+    margin-right: 2rem;
+}
+
+
+.nav_right_info_avt img{
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+.container{
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    background-color: var(--background_color_left);
+    margin: 1px auto;
+    margin-left: 2px;
+    min-width: 14rem;
+    max-width: 15rem; 
+}
+.left{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.right{
+  flex: 4;
+}
+.listRoom{
+    flex: 4;
+    margin-left: 2rem;
+    position: relative;
+}
+.listFloor{
+    
+    background-color: var(--background_color_left);
+    margin: 1px auto;
+    margin-left: 2px;
+    display: flex;
+    height: 4.6rem;
+}
+.listFloor_menu{
+    display: flex;
+}
+.left_menu li, .listFloor_menu li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: left;
+    
+    background-color: #fff;
+    padding: 10px;
+    color: var(--background-color_icon_menu);
+    cursor: pointer;
+}
+.left_menu li{
+    border-bottom: 1px solid;
+    min-width: 2rem;
+    max-width: 8rem;
+}
+.listFloor_menu li{
+    border: 1px solid;
+    width: 5.5rem;
+}
+.left_menu{
+    width: 100%;
+}
+.left_menu span{
+    /* display: none; */
+}
+.listFloor{
+    transition: linear 0.1s;
+    /* display: none; */
+}
+
+
+.left_menu li:hover, .listFloor li:hover, .room:hover{
+    background-color: #d4d7dc;
+}
+.maps{
+    /* margin-left: 3rem; */
+    /* display: none; */
+}
+.room{
+    cursor: pointer;
+    background-color: var(--background_color_left);
+    padding: 1.3rem;
+}
+.room-full{
+    background-color: #de8588;
+    pointer-events: none;
+}
+
+.maps{
+    flex: 3;
+    transition: linear 0.1s;
+}
+
+/* boxx confirrmmm */
+
+.confirmRoom{
+
+}
+.confirmRoom-border{
+    border: 1px solid;
+    border-radius: 0.2rem;
+    position:absolute;
+    top: 5rem;
+    left: 20rem;
+    background-color: aqua;
+}
+.confirmRoom-border-close{
+    color: #d4d7dc;
+    position:absolute;
+    right: 0;
+    background-color: #e81123;
+    border: 1px solid;
+    border-radius: 0rem 0.2rem 0rem 0.2rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    cursor: pointer;
+
+}
+.confirmRoom-border-close:hover{
+    background-color: #e64855;
+}
+.confirmRoom-border-box{
+    padding: 1.8rem 1rem 1rem 1rem;
+}
+.contract{
+    border: 1px solid;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    height: 5rem;
+    overflow-y: scroll;
+}
+th {
+    background-color: var(--background_color_th);
+}
+
+th {
+    background-color: var(--background_color_th);
+}
+.table_ th{
+    border: 0.1px solid;
+}
+.table_ td {
+    border: 0.1px solid;
+    margin: 0px;
+}
+
+
+.table_ tr:hover{
+    cursor: pointer;
+    background-color: var(--background_color_left);
+}
